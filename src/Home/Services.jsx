@@ -31,7 +31,7 @@ export default function Services() {
 <section className="relative w-full min-h-[90vh] bg-black text-white">
   {/* Background Image */}
   <img
-    src="/Image/Digital.jpg"
+    src="./Image/Digital.jpg"
     alt="Digital Background"
     className="absolute inset-0 w-full h-full object-cover z-0"
   />
