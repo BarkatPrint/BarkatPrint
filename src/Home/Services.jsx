@@ -31,7 +31,7 @@ export default function Services() {
 <section className="relative w-full min-h-[90vh] bg-black text-white">
   {/* Background Image */}
   <img
-    src="/Image/Digital.jpg"
+    src="./Image/Digital.jpg"
     alt="Digital Background"
     className="absolute inset-0 w-full h-full object-cover z-0"
   />
@@ -59,18 +59,18 @@ export default function Services() {
 
 {/* Cards Section with Background */}
 <div
-  className="relative w-full bg-cover bg-center py-16 px-4"
+  className="relative w-full bg-cover bg-center py-16 px-4 flex justify-center"
   style={{ backgroundImage: "url('/BarkatPrint/Image/Background.jpg')" }}
 >
-
   <div className="absolute inset-0 bg-black bg-opacity-50 z-0" />
-  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+
+  <div className="relative z-10 max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
     {/* Card 1: Logo Design */}
-    <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md">
+    <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md group">
       <img
         src="./Image/Digital/Logo.png"
         alt="Logo Design"
-        className="w-full h-64 object-contain p-5"
+        className="w-full h-64 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
       />
       <div className="p-5">
         <h3 className="text-xl font-bold mb-2">LOGO DESIGN</h3>
@@ -82,11 +82,11 @@ export default function Services() {
     </div>
 
     {/* Card 2: Social Media Design */}
-    <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md">
+    <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md group">
       <img
         src="./Image/Digital/Social.png"
         alt="Social Media"
-        className="w-full h-64 object-contain p-5"
+        className="w-full h-64 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
       />
       <div className="p-5">
         <h3 className="text-xl font-bold mb-2">SOCIAL MEDIA DESIGN</h3>
@@ -98,11 +98,11 @@ export default function Services() {
     </div>
 
     {/* Card 3: Graphic Design & Branding */}
-    <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md">
+    <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md group">
       <img
         src="./Image/Digital/graphic.png"
         alt="Graphic Design"
-        className="w-full h-64 object-contain p-5"
+        className="w-full h-64 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
       />
       <div className="p-5">
         <h3 className="text-xl font-bold mb-2">GRAPHIC DESIGN & BRANDING</h3>
@@ -116,103 +116,106 @@ export default function Services() {
       </div>
     </div>
 
-     {/* Card 4: Video Design */}
-     <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md">
+    {/* Card 4: Video Production */}
+    <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md group">
       <img
         src="./Image/Digital/Video.png"
-        alt="Logo Design"
-        className="w-full h-64 object-contain p-5"
+        alt="Video Production"
+        className="w-full h-64 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
       />
       <div className="p-5">
-        <h3 className="text-xl font-bold mb-2"> VIDEO PRODUCTION 
-        & 3D ANIMATION</h3>
-        <p className="text-sm mb-4">High-quality edits with stunning 3D animations
-        Bring your vision to life with seamless storytelling.</p>
+        <h3 className="text-xl font-bold mb-2">VIDEO PRODUCTION & 3D ANIMATION</h3>
+        <p className="text-sm mb-4">
+          High-quality edits with stunning 3D animations<br />
+          Bring your vision to life with seamless storytelling.
+        </p>
         <button className="bg-white text-[#000536] px-4 py-2 rounded-full hover:bg-[#000536] hover:text-white transition">
           View More
         </button>
       </div>
     </div>
 
-    {/* Card 5: WEB & APP DEVELOPMENT */}
-    <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md">
+    {/* Card 5: Web & App Development */}
+    <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md group">
       <img
         src="./Image/Digital/Web.png"
-        alt="Social Media"
-        className="w-full h-64 object-contain p-5"
+        alt="Web Development"
+        className="w-full h-64 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
       />
       <div className="p-5">
         <h3 className="text-xl font-bold mb-2">WEB & APP DEVELOPMENT</h3>
-        <p className="text-sm mb-4">Get a powerful website & app that grows your business
-        Custom-built for performance, security, and success.</p>
+        <p className="text-sm mb-4">
+          Get a powerful website & app that grows your business<br />
+          Custom-built for performance, security, and success.
+        </p>
         <button className="bg-white text-[#000536] px-4 py-2 rounded-full hover:bg-[#000536] hover:text-white transition">
           View More
         </button>
       </div>
     </div>
 
-    {/* Card 6: SOCIAL MEDIA & DIGITAL MARKETING */}
-    <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md">
+    {/* Card 6: Social Media & Digital Marketing */}
+    <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md group">
       <img
         src="./Image/Digital/Digital.png"
-        alt="Graphic Design"
-        className="w-full h-64 object-contain p-5"
+        alt="Digital Marketing"
+        className="w-full h-64 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
       />
       <div className="p-5">
         <h3 className="text-xl font-bold mb-2">SOCIAL MEDIA & DIGITAL MARKETING</h3>
         <p className="text-sm mb-4">
-        Boost your brand with powerful campaigns
-        Reach the right audience and maximize engagement.
+          Boost your brand with powerful campaigns<br />
+          Reach the right audience and maximize engagement.
         </p>
         <button className="bg-white text-[#000536] px-4 py-2 rounded-full hover:bg-[#000536] hover:text-white transition">
           View More
         </button>
       </div>
     </div>
-     {/* Card 7: PRODUCT PHOTOGRAPHY */}
-     <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md">
+
+    {/* Card 7: Product Photography */}
+    <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md group">
       <img
         src="./Image/Digital/Product.png"
-        alt="Social Media"
-        className="w-full h-64 object-contain p-5"
+        alt="Product Photography"
+        className="w-full h-64 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
       />
       <div className="p-5">
         <h3 className="text-xl font-bold mb-2">PRODUCT PHOTOGRAPHY</h3>
-        <p className="text-sm mb-4">Showcase your products with stunning, 
-        high-quality visuals that drive sales.</p>
+        <p className="text-sm mb-4">
+          Showcase your products with stunning,<br />
+          high-quality visuals that drive sales.
+        </p>
         <button className="bg-white text-[#000536] px-4 py-2 rounded-full hover:bg-[#000536] hover:text-white transition">
           View More
         </button>
       </div>
     </div>
 
-    {/* Card 8: E-COMMERCE SOLUTIONS */}
-    <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md">
+    {/* Card 8: E-commerce Solutions */}
+    <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md group">
       <img
         src="./Image/Digital/E-Commerce.png"
-        alt="Graphic Design"
-        className="w-full h-64 object-contain p-5"
+        alt="E-Commerce Solutions"
+        className="w-full h-64 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
       />
       <div className="p-5">
         <h3 className="text-xl font-bold mb-2">E-COMMERCE SOLUTIONS</h3>
         <p className="text-sm mb-4">
-        Eye-catching designs that make an impact
-Enhance your brand with creative visuals.
+          Eye-catching designs that make an impact<br />
+          Enhance your brand with creative visuals.
         </p>
         <button className="bg-white text-[#000536] px-4 py-2 rounded-full hover:bg-[#000536] hover:text-white transition">
           View More
         </button>
       </div>
     </div>
- 
+
   </div>
-
-  
-  
-
-
-  
 </div>
+
+
+
 
 
 
