@@ -37,7 +37,7 @@ export default function Services() {
       {/* Contact Section with Background Image */}
       <section className="relative w-full min-h-[90vh] bg-black text-white">
         <img
-          src="/Image/Contact.jpg"
+          src="./Image/Contact.jpg"
           alt="Digital Background"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
@@ -54,7 +54,7 @@ export default function Services() {
       </section>
 
       {/* Form Section with Background */}
-      <div className="relative w-full bg-cover bg-center py-16 px-4" style={{ backgroundImage: "url('/Image/Background.jpg')" }}>
+      <div className="relative w-full bg-cover bg-center py-16 px-4" style={{ backgroundImage: "url('./Image/Background.jpg')" }}>
         <div className="flex items-center justify-center px-4 py-12">
           <form onSubmit={handleSubmit} className="w-full max-w-xl bg-black bg-opacity-50 p-8 rounded-xl shadow-lg text-white">
             <div className="mb-4">
