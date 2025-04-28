@@ -31,11 +31,10 @@ export default function Services() {
 <section className="relative w-full min-h-[90vh] bg-black text-white">
   {/* Background Image */}
   <img
-  src="/Image/Digital.jpg"
-  alt="Digital Background"
-  className="absolute inset-0 w-full h-full object-cover z-0 min-h-[300px] md:min-h-[500px] lg:min-h-[700px]"
-/>
-
+    src="./Image/Digital.jpg"
+    alt="Digital Background"
+    className="absolute inset-0 w-full h-full object-cover z-0"
+  />
 
   {/* Overlay */}
   <div className="absolute inset-0 bg-black bg-opacity-40 z-10" />
