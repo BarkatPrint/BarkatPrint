@@ -66,11 +66,12 @@ export default function Printing() {
 
         {/* Hero Section */}
         <section className="relative w-full bg-black text-white">
-          <img
-            src="./Image/Printing/Banner.png"
-            alt="Digital Background"
-            className="absolute inset-0 w-full h-full object-cover z-0"
-          />
+        <img
+  src="/Image/Printing/Banner.png"
+  alt="Digital Background"
+  className="absolute inset-0 w-full h-full object-cover z-0 min-h-[300px] md:min-h-[500px] lg:min-h-[700px]"
+/>
+
           <div className="absolute inset-0 bg-black bg-opacity-40 z-10" />
           <div className="relative z-20 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 py-16 min-h-[90vh]">
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold mb-4 md:mb-6 drop-shadow-lg">

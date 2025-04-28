@@ -54,7 +54,11 @@ export default function Services() {
       </section>
 
       {/* Form Section with Background */}
-      <div className="relative w-full bg-cover bg-center py-16 px-4" style={{ backgroundImage: "url('./Image/Background.jpg')" }}>
+      <div
+  className="relative w-full bg-cover bg-center py-16 px-4 min-h-[300px] md:min-h-[500px] lg:min-h-[700px]"
+  style={{ backgroundImage: "url('./Image/Background.jpg')" }}
+>
+
         <div className="flex items-center justify-center px-4 py-12">
           <form onSubmit={handleSubmit} className="w-full max-w-xl bg-black bg-opacity-50 p-8 rounded-xl shadow-lg text-white">
             <div className="mb-4">
