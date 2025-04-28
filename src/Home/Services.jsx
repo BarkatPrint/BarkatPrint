@@ -31,7 +31,7 @@ export default function Services() {
 <section className="relative w-full min-h-[90vh] bg-black text-white">
   {/* Background Image */}
   <img
-    src="./Image/Digital.jpg"
+    src="/Image/Digital.jpg"
     alt="Digital Background"
     className="absolute inset-0 w-full h-full object-cover z-0"
   />
@@ -58,7 +58,7 @@ export default function Services() {
 
 
 {/* Cards Section with Background */}
-<div className="relative w-full bg-cover bg-center py-16 px-4" style={{ backgroundImage: "url('/Image/Background.jpg')" }}>
+<div className="relative w-full bg-cover bg-center py-16 px-4" style={{ backgroundImage: "url('./Image/Background.jpg')" }}>
   <div className="absolute inset-0 bg-black bg-opacity-50 z-0" />
   <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
     {/* Card 1: Logo Design */}
