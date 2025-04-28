@@ -7,27 +7,27 @@ const cards = [
     {
       title: "FLEX PRINTING",
       p: "Bigger Prints, Bigger Impact.",
-      image: "/Image/Printing/Flex.png",
+      image: "./Image/Printing/Flex.png",
     },
     {
       title: "DIGITAL PRINTING",
       p: "Precision Prints, Perfect Results.",
-      image: "/Image/Printing/Digital.png",
+      image: "./Image/Printing/Digital.png",
     },
     {
       title: "OFFSET PRINTING",
       p: "High-Volume Prints, Maximum Quality.",
-      image: "/Image/Printing/Offset.png",
+      image: "./Image/Printing/Offset.png",
     },
     {
       title: "T-SHIRT PRINTING",
       p: "Wear Your Style, Drink Your Passion.",
-      image: "/Image/Printing/t-shirt.png",
+      image: "./Image/Printing/t-shirt.png",
     },
     {
       title: "SCREEN PRINTING",
       p: "Bold Prints for Every Fabric.",
-      image: "/Image/Printing/Screen.png",
+      image: "./Image/Printing/Screen.png",
     },
   ];
   
@@ -61,13 +61,13 @@ export default function Printing() {
       {/* Background Section */}
       <div
         className="relative w-full bg-cover bg-center py-16 px-4 before:absolute before:inset-0 before:bg-black/50 before:content-['']"
-        style={{ backgroundImage: "url('/Image/Background.jpg')" }}
+        style={{ backgroundImage: "url('./Image/Background.jpg')" }}
       >
 
         {/* Hero Section */}
         <section className="relative w-full bg-black text-white">
           <img
-            src="/Image/Printing/Banner.png"
+            src="./Image/Printing/Banner.png"
             alt="Digital Background"
             className="absolute inset-0 w-full h-full object-cover z-0"
           />
@@ -143,7 +143,7 @@ export default function Printing() {
       {/* Card 1 - Left */}
 <div className="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden text-white shadow-md w-full max-w-sm group">
   <img
-    src="/Image/Printing/Visiting.png"
+    src="./Image/Printing/Visiting.png"
     alt="Wedding Cards"
     className="w-full h-64 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
   />
@@ -159,7 +159,7 @@ export default function Printing() {
 {/* Card 2 - Center */}
 <div className="bg-white/10 rounded-2xl overflow-hidden text-white shadow-md w-full max-w-md mt-6 scale-105 group">
   <img
-    src="/Image/Printing/Wedding.png"
+    src="./Image/Printing/Wedding.png"
     alt="Wedding Cards"
     className="w-full h-72 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
   />
@@ -175,7 +175,7 @@ export default function Printing() {
 {/* Card 3 - Right */}
 <div className="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden text-white shadow-md w-full max-w-sm group">
   <img
-    src="/Image/Printing/id card.png"
+    src="./Image/Printing/id card.png"
     alt="ID Cards"
     className="w-full h-64 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
   />
@@ -192,7 +192,7 @@ export default function Printing() {
    {/* Card 4 - Left */}
 <div className="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden text-white shadow-md w-full max-w-sm group">
   <img
-    src="/Image/Printing/cup.png"
+    src="./Image/Printing/cup.png"
     alt="ID CARDS"
     className="w-full h-64 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
   />
@@ -210,7 +210,7 @@ export default function Printing() {
 {/* Card 5 - Center */}
 <div className="bg-white/10 rounded-2xl overflow-hidden text-white shadow-md w-full max-w-md mt-6 scale-105 group">
   <img
-    src="/Image/Printing/pamphlet.png"
+    src="./Image/Printing/pamphlet.png"
     alt="Pamphlet"
     className="w-full h-72 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
   />
@@ -228,7 +228,7 @@ export default function Printing() {
 {/* Card 6 - Right */}
 <div className="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden text-white shadow-md w-full max-w-sm group">
   <img
-    src="/Image/Printing/bill book.png"
+    src="./Image/Printing/bill book.png"
     alt="Bill Book"
     className="w-full h-64 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
   />
@@ -246,7 +246,7 @@ export default function Printing() {
     {/* Card 7 - Left */}
 <div className="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden text-white shadow-md w-full max-w-sm group">
   <img
-    src="/Image/Printing/invitation.png"
+    src="./Image/Printing/invitation.png"
     alt="ID CARDS"
     className="w-full h-64 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
   />
@@ -264,7 +264,7 @@ export default function Printing() {
 {/* Card 8 - Center */}
 <div className="bg-white/10 rounded-2xl overflow-hidden text-white shadow-md w-full max-w-md mt-6 scale-105 group">
   <img
-    src="/Image/Printing/car poster.png"
+    src="./Image/Printing/car poster.png"
     alt="PAMPHLET"
     className="w-full h-72 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
   />
@@ -282,7 +282,7 @@ export default function Printing() {
 {/* Card 9 - Right */}
 <div className="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden text-white shadow-md w-full max-w-sm group">
   <img
-    src="/Image/Printing/calendar.png"
+    src="./Image/Printing/calendar.png"
     alt="BILL BOOK"
     className="w-full h-64 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
   />
@@ -301,7 +301,7 @@ export default function Printing() {
    {/* Card 10 - Left */}
    <div className="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden text-white shadow-md w-full max-w-sm group">
   <img
-    src="/Image/Printing/hoarding.png"
+    src="./Image/Printing/hoarding.png"
     alt="ID CARDS"
     className="w-full h-64 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
   />
@@ -319,7 +319,7 @@ export default function Printing() {
 {/* Card 11 - Center */}
 <div className="bg-white/10 rounded-2xl overflow-hidden text-white shadow-md w-full max-w-md mt-6 scale-105 group">
   <img
-    src="/Image/Printing/flex banner.png"
+    src="./Image/Printing/flex banner.png"
     alt="PAMPHLET"
     className="w-full h-72 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
   />
@@ -337,7 +337,7 @@ export default function Printing() {
 {/* Card 12 - Right */}
 <div className="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden text-white shadow-md w-full max-w-sm group">
   <img
-    src="/Image/Printing/cashmemo.png"
+    src="./Image/Printing/cashmemo.png"
     alt="BILL BOOK"
     className="w-full h-64 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
   />
@@ -356,7 +356,7 @@ export default function Printing() {
   {/* Card 13 - Left */}
   <div className="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden text-white shadow-md w-full max-w-sm group">
   <img
-    src="/Image/Printing/letterpad.png"
+    src="./Image/Printing/letterpad.png"
     alt="ID CARDS"
     className="w-full h-64 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
   />
@@ -374,7 +374,7 @@ export default function Printing() {
 {/* Card 14 - Center */}
 <div className="bg-white/10 rounded-2xl overflow-hidden text-white shadow-md w-full max-w-md mt-6 scale-105 group">
   <img
-    src="/Image/Printing/light board.png"
+    src="./Image/Printing/light board.png"
     alt="PAMPHLET"
     className="w-full h-72 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
   />
@@ -392,7 +392,7 @@ export default function Printing() {
 {/* Card 15 - Right */}
 <div className="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden text-white shadow-md w-full max-w-sm group">
   <img
-    src="/Image/Printing/standee.png"
+    src="./Image/Printing/standee.png"
     alt="BILL BOOK"
     className="w-full h-64 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
   />
@@ -411,7 +411,7 @@ export default function Printing() {
  {/* Card 16 - Left */}
  <div className="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden text-white shadow-md w-full max-w-sm group">
   <img
-    src="/Image/Printing/e-riksha.png"
+    src="./Image/Printing/e-riksha.png"
     alt="ID CARDS"
     className="w-full h-64 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
   />
@@ -429,7 +429,7 @@ export default function Printing() {
 {/* Card 17 - Center */}
 <div className="bg-white/10 rounded-2xl overflow-hidden text-white shadow-md w-full max-w-md mt-6 scale-105 group">
   <img
-    src="/Image/Printing/audio.png"
+    src="./Image/Printing/audio.png"
     alt="PAMPHLET"
     className="w-full h-72 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
   />
@@ -447,7 +447,7 @@ export default function Printing() {
 {/* Card 18 - Right */}
 <div className="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden text-white shadow-md w-full max-w-sm group">
   <img
-    src="/Image/Printing/jhola.png"
+    src="./Image/Printing/jhola.png"
     alt="BILL BOOK"
     className="w-full h-64 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
   />
@@ -485,7 +485,7 @@ export default function Printing() {
     {/* Card 1 */}
     <div className="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden text-white shadow-md w-full max-w-sm group">
       <img
-        src="/Image/Printing/ACRYLIC.png"
+        src="./Image/Printing/ACRYLIC.png"
         alt="E-Rickshaw Promotion"
         className="w-full h-64 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
       />
@@ -501,7 +501,7 @@ export default function Printing() {
     {/* Card 2 */}
     <div className="bg-white/10 rounded-2xl overflow-hidden text-white shadow-md w-full max-w-sm group scale-105">
       <img
-        src="/Image/Printing/led.png"
+        src="./Image/Printing/led.png"
         alt="Audio Advertisements"
         className="w-full h-72 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
       />
@@ -517,7 +517,7 @@ export default function Printing() {
     {/* Card 3 */}
     <div className="bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden text-white shadow-md w-full max-w-sm group">
       <img
-        src="/Image/Printing/glow.png"
+        src="./Image/Printing/glow.png"
         alt="Jhola Print"
         className="w-full h-64 object-contain p-5 transition-transform duration-300 ease-in-out group-hover:scale-105"
       />

@@ -42,7 +42,7 @@ export default function Services() {
   {/* Content */}
   <div className="relative z-20 flex flex-col items-center justify-center text-center px-4 py-16 min-h-[90vh]">
     <h1 className="text-3xl md:text-5xl font-extrabold mb-6 drop-shadow-lg">
-      DIGITAL SERVICES
+      DIGITAL SERVICESs
     </h1>
     <p className="text-base md:text-lg max-w-3xl mx-auto mb-6 drop-shadow-md">
       Complete Digital Solutions – From Creative Designs to Advanced Marketing,<br />
@@ -64,7 +64,7 @@ export default function Services() {
     {/* Card 1: Logo Design */}
     <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md">
       <img
-        src="/Image/Digital/Logo.png"
+        src="./Image/Digital/Logo.png"
         alt="Logo Design"
         className="w-full h-64 object-contain p-5"
       />
@@ -80,7 +80,7 @@ export default function Services() {
     {/* Card 2: Social Media Design */}
     <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md">
       <img
-        src="/Image/Digital/Social.png"
+        src="./Image/Digital/Social.png"
         alt="Social Media"
         className="w-full h-64 object-contain p-5"
       />
@@ -96,7 +96,7 @@ export default function Services() {
     {/* Card 3: Graphic Design & Branding */}
     <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md">
       <img
-        src="/Image/Digital/graphic.png"
+        src="./Image/Digital/graphic.png"
         alt="Graphic Design"
         className="w-full h-64 object-contain p-5"
       />
@@ -115,7 +115,7 @@ export default function Services() {
      {/* Card 4: Video Design */}
      <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md">
       <img
-        src="/Image/Digital/Video.png"
+        src="./Image/Digital/Video.png"
         alt="Logo Design"
         className="w-full h-64 object-contain p-5"
       />
@@ -133,7 +133,7 @@ export default function Services() {
     {/* Card 5: WEB & APP DEVELOPMENT */}
     <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md">
       <img
-        src="/Image/Digital/Web.png"
+        src="./Image/Digital/Web.png"
         alt="Social Media"
         className="w-full h-64 object-contain p-5"
       />
@@ -150,7 +150,7 @@ export default function Services() {
     {/* Card 6: SOCIAL MEDIA & DIGITAL MARKETING */}
     <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md">
       <img
-        src="/Image/Digital/Digital.png"
+        src="./Image/Digital/Digital.png"
         alt="Graphic Design"
         className="w-full h-64 object-contain p-5"
       />
@@ -168,7 +168,7 @@ export default function Services() {
      {/* Card 7: PRODUCT PHOTOGRAPHY */}
      <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md">
       <img
-        src="/Image/Digital/Product.png"
+        src="./Image/Digital/Product.png"
         alt="Social Media"
         className="w-full h-64 object-contain p-5"
       />
@@ -185,7 +185,7 @@ export default function Services() {
     {/* Card 8: E-COMMERCE SOLUTIONS */}
     <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden text-white shadow-md">
       <img
-        src="/Image/Digital/E-Commerce.png"
+        src="./Image/Digital/E-Commerce.png"
         alt="Graphic Design"
         className="w-full h-64 object-contain p-5"
       />
