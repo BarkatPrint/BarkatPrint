@@ -60,7 +60,7 @@ export default function Services() {
 {/* Cards Section with Background */}
 <div
   className="relative w-full bg-cover bg-center py-16 px-4 flex justify-center"
-  style={{ backgroundImage: "url('/BarkatPrint/Image/Background.jpg')" }}
+style={{ backgroundImage: "url('/Image/Background.jpg')" }}
 >
   <div className="absolute inset-0 bg-black bg-opacity-50 z-0" />
 
