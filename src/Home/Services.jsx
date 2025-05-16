@@ -28,13 +28,14 @@ export default function Services() {
 
 
 {/* Digital Services Section with Background Image */}
-<section className="relative w-full min-h-[90vh] bg-black text-white">
+<section className="relative w-full h-full bg-black text-white">
   {/* Background Image */}
   <img
-    src="./Image/Digital.jpg"
-    alt="Digital Background"
-    className="absolute inset-0 w-full h-full object-cover z-0"
-  />
+  src="./Image/Digital.jpg"
+  alt="Digital Background"
+  className="absolute inset-0 w-full h-full object-cover z-0"
+/>
+
 
   {/* Overlay */}
   <div className="absolute inset-0 bg-black bg-opacity-40 z-10" />
@@ -42,7 +43,7 @@ export default function Services() {
   {/* Content */}
   <div className="relative z-20 flex flex-col items-center justify-center text-center px-4 py-16 min-h-[90vh]">
     <h1 className="text-3xl md:text-5xl font-extrabold mb-6 drop-shadow-lg">
-      DIGITAL SERVICESs
+      DIGITAL SERVICES
     </h1>
     <p className="text-base md:text-lg max-w-3xl mx-auto mb-6 drop-shadow-md">
       Complete Digital Solutions – From Creative Designs to Advanced Marketing,<br />
