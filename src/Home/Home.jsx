@@ -51,21 +51,7 @@ export default function Home() {
         ))}
       </div>
 
-      {/* Left Arrow */}
-      <button
-        onClick={goToPrevious}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-blue-900 bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-80 transition"
-      >
-        &#8592;
-      </button>
-
-      {/* Right Arrow */}
-      <button
-        onClick={goToNext}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-blue-900 bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-80 transition"
-      >
-        &#8594;
-      </button>
+     
 
       {/* Dots Indicators */}
       <div className="flex space-x-3 absolute bottom-6">
