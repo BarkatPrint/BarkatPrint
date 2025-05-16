@@ -22,7 +22,7 @@ const Header = () => {
         href="https://wa.me/917050266383"
         target="_blank"
         rel="noopener noreferrer"
-        className="ml-2 bg-[#25D366] rounded-full p-2"
+        className="ml-2 bg-[#1da34e] rounded-full p-2"
       >
         <img
           src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp--v1.png"

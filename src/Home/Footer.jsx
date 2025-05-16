@@ -17,7 +17,7 @@ export default function Footer() {
         
         {/* Left Column */}
         <div>
-          <h2 className="text-4xl font-extrabold">BARKAT PRINT</h2>
+          <h2 className="text-4xl font-extrabold">AR PRINT HUB</h2>
           <p className="mt-4 text-sm text-white/90">
             We offer complete printing and digital media solutions including banners, cards, social media designs, and brand promotions – all under one creative roof!
           </p>
@@ -46,7 +46,7 @@ export default function Footer() {
           </div>
           <div className="flex items-center space-x-3">
             <FaEnvelope />
-            <p className="text-sm text-white/90">arflex@gmail.com</p>
+            <p className="text-sm text-white/90">arprinthub25@gmail.com</p>
           </div>
         </div>
 
