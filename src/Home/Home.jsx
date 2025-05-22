@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
+
+import Services from './Services';
+import Printing from './Printing';
+
+
+
 const images = [
   './Image/Banner1.jpg',
   './Image/Banner2.jpg',
@@ -66,6 +72,9 @@ export default function Home() {
           />
         ))}
       </div>
+      <Services />
+      <Printing />
+      
     </div>
   );
 }

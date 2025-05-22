@@ -1,21 +1,11 @@
-import Header from './Home/Header';
-import Home from './Home/Home';
-import Services from './Home/Services';
-import Printing from './Home/Printing';
-import Contact from './Home/Contact';
-import Footer from './Home/Footer';
+import React from 'react';
+import All from './All';
 
 function App() {
   return (
     <div className="relative">
-      <Header />
-      <Home />
-      <Services />
-      <Printing />
-      <Contact />
-      <Footer />
-
-      {/* WhatsApp Floating Button */}
+      <All />
+      {/* Floating WhatsApp Button */}
       <a
         href="https://wa.me/917050266383"
         className="fixed bottom-5 right-5 z-50"
