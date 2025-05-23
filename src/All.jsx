@@ -1,28 +1,31 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './Home/Header';
-import Footer from './Home/Footer'; // ✅ Import Footer
-import Home from './Home/Home';
-import Blog from './Home/Blog';
-import Contact from './Home/Contact';
-import DigitalServices from './Home/Services';
-import PrintingServices from './Home/Printing';
+
+import Header from './Page/Header';
+import Footer from './Page/Footer'; 
+import Home from './Page/Home';
+import Blog from './Page/Blog';
+import Contact from './Page/Contact';
+
+import DigitalServices from './Home/Digital/Services';
+import PrintingServices from './Home/Printing/PrintingServices'; 
+import OurServices from './Page/OurServices';  // <-- New import
 
 function All() {
   return (
     <Router>
       <Header />
 
-      {/* Routes */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/digital-services" element={<DigitalServices />} />
         <Route path="/printing-services" element={<PrintingServices />} />
+        <Route path="/our-services" element={<OurServices />} />   {/* New route */}
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
-      <Footer /> {/* ✅ Footer will appear on every page */}
+      <Footer />
     </Router>
   );
 }

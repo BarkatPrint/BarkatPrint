@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
 
-import Services from './Services';
-import Printing from './Printing';
+
+
+
 
 
 
@@ -40,6 +41,8 @@ export default function Home() {
   };
 
   return (
+    
+
     <div className="relative w-full h-full overflow-hidden bg-black flex flex-col items-center justify-center">
       
       <div
@@ -72,9 +75,13 @@ export default function Home() {
           />
         ))}
       </div>
-      <Services />
-      <Printing />
-      
+
+    
+    
+     
     </div>
+
+
+
   );
 }

@@ -1,6 +1,4 @@
-import React, { useRef, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-
+import React, { useRef, useEffect, useState } from 'react';
 
 export default function Services() {
   const services = [
@@ -47,7 +45,16 @@ export default function Services() {
   ];
 
   const sliderRef = useRef(null);
-  const navigate = useNavigate();
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    function handleResize() {
+      setIsMobile(window.innerWidth < 768);
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     const slider = sliderRef.current;
@@ -70,25 +77,30 @@ export default function Services() {
   }, []);
 
   return (
-    <div className="relative w-full min-h-screen text-white">
+    <div className="relative w-full h-full text-white">
 
-      {/* Digital Services Header Section */}
-      <section className="relative w-full h-full bg-black text-white">
+      {/* Banner Section */}
+      <section
+        className="relative w-full h-[800px] flex items-center justify-center"
+      >
         <img
           src="/Image/Digital.jpg"
           alt="Digital Background"
-          className="absolute inset-0 w-full h-full object-cover z-0"
+          className="absolute inset-0 w-full h-full object-center z-0"
+          style={{
+            objectFit: isMobile ? "contain" : "cover",
+          }}
         />
-        <div className="absolute inset-0 bg-black bg-opacity-40 z-10" />
-        <div className="relative z-20 flex flex-col items-center justify-center text-center px-4 py-16 min-h-[90vh]">
-          <h1 className="text-3xl md:text-5xl font-extrabold mb-6 drop-shadow-lg">
+        <div className="absolute inset-0 bg-black bg-opacity-50 z-10" />
+        <div className="relative z-20 max-w-4xl text-center px-4 py-16">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold mb-6 drop-shadow-lg leading-tight">
             DIGITAL SERVICES
           </h1>
-          <p className="text-base md:text-lg max-w-3xl mx-auto mb-6 drop-shadow-md">
+          <p className="text-sm sm:text-base md:text-lg max-w-3xl mx-auto mb-6 drop-shadow-md leading-relaxed">
             Complete Digital Solutions – From Creative Designs to Advanced Marketing,<br />
             We Deliver Excellence in Every Digital Service!
           </p>
-          <p className="font-semibold text-sm md:text-base max-w-4xl mx-auto drop-shadow-sm">
+          <p className="font-semibold text-xs sm:text-sm md:text-base max-w-4xl mx-auto drop-shadow-sm leading-snug">
             Graphic Design & Branding | Video Production & 3D Animation | Web & App Development<br />
             Social Media & Digital Marketing | Product Photography | E-commerce Solutions | And Much More!
           </p>
@@ -100,20 +112,21 @@ export default function Services() {
         className="relative w-full bg-cover bg-center py-10 px-4"
         style={{ backgroundImage: "url('/Image/Background.jpg')" }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50 z-0" />
+        <div className="absolute inset-0 bg-black bg-opacity-60 z-0" />
         <div
           ref={sliderRef}
           className="relative z-10 max-w-7xl mx-auto flex flex-nowrap gap-4 overflow-x-auto py-4 px-2 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-300"
+          style={{ scrollBehavior: 'smooth' }}
         >
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white/10 backdrop-blur-sm rounded-xl text-white shadow-md group flex flex-col items-center p-3 text-center min-w-[200px]"
+              className="bg-white/10 backdrop-blur-sm rounded-xl text-white shadow-md group flex flex-col items-center p-4 text-center min-w-[200px] hover:scale-105 transition-transform duration-300"
             >
               <img
                 src={service.img}
                 alt={service.title}
-                className="w-full h-auto object-contain max-h-40 transition-transform duration-300 ease-in-out group-hover:scale-105"
+                className="w-full h-auto object-contain max-h-40"
               />
               <div className="mt-3">
                 <h3 className="text-sm font-bold mb-1">{service.title}</h3>
@@ -125,11 +138,8 @@ export default function Services() {
             </div>
           ))}
         </div>
-
-        
       </div>
 
-   
     </div>
   );
 }

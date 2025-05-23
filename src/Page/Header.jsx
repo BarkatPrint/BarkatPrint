@@ -7,7 +7,7 @@ const Header = () => {
   const closeSidebar = () => setSidebarOpen(false);
 
   return (
-    <header className="bg-gradient-to-r from-[#000673] to-[#C90055] text-white px-[70px] py-8 flex items-center justify-between shadow-md flex-wrap relative">
+    <header className="bg-gradient-to-r from-[#000673] to-[#C90055] text-white px-4 sm:px-[50px] py-8 flex items-center justify-between shadow-md flex-wrap relative">
 
       {/* Logo */}
       <Link to="/" className="flex items-center space-x-2">
@@ -29,6 +29,9 @@ const Header = () => {
         <Link to="/printing-services" className="px-3 py-2 hover:bg-white hover:text-[#000433] rounded-md transition duration-200">
           Printing Services
         </Link>
+        <Link to="/our-services" className="px-3 py-2 hover:bg-white hover:text-[#000433] rounded-md transition duration-200">
+          Our Services
+        </Link>
         <Link to="/blog" className="px-3 py-2 hover:bg-white hover:text-[#000433] rounded-md transition duration-200">
           Blog
         </Link>
@@ -36,8 +39,6 @@ const Header = () => {
           Contact
         </Link>
       </nav>
-
-      {/* Removed WhatsApp icon from desktop */}
 
       {/* Hamburger Button Mobile */}
       <button
@@ -93,6 +94,9 @@ const Header = () => {
           </Link>
           <Link onClick={closeSidebar} to="/printing-services" className="hover:text-[#C90055] font-semibold">
             Printing Services
+          </Link>
+          <Link onClick={closeSidebar} to="/our-services" className="hover:text-[#C90055] font-semibold">
+            Our Services
           </Link>
           <Link onClick={closeSidebar} to="/blog" className="hover:text-[#C90055] font-semibold">
             Blog

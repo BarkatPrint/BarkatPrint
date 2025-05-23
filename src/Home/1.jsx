@@ -2,8 +2,8 @@ import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import TopPrinting from './TopPrinting';
-import BrandingSolutions from './BrandingSolutions';
+
+
 
 
 const cards = [
@@ -66,37 +66,12 @@ export default function Printing() {
 
       {/* Background Section */}
       <div
-        className="relative w-full bg-cover bg-center py-16 
+        className="relative w-full h-full bg-cover bg-center py-16 
           before:absolute before:inset-0 before:bg-black/50 before:content-['']"
         style={{ backgroundImage: "url('./Image/Background.jpg')" }}
       >
 
-        {/* Hero Section */}
-       <section className="relative w-full h-full bg-black text-white">
-  {/* Background image */}
-  <div
-    className="absolute inset-0 bg-cover bg-center z-0"
-    style={{ backgroundImage: "url('./Image/Print.jpg')" }}
-  />
 
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-black bg-opacity-40 z-10" />
-
-  {/* Content */}
-  <div className="relative z-20 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 py-16 min-h-[90vh]">
-    <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold mb-4 md:mb-6 drop-shadow-lg">
-      PRINTING SERVICES
-    </h1>
-    <p className="text-sm sm:text-base md:text-lg max-w-xl sm:max-w-2xl md:max-w-3xl mx-auto mb-4 md:mb-6 drop-shadow-md">
-      Complete Printing Solutions – From Business Essentials to Custom Creations,
-      We Print It All with Precision & Quality!
-    </p>
-    <p className="font-semibold text-xs sm:text-sm md:text-base max-w-xs sm:max-w-xl md:max-w-4xl mx-auto drop-shadow-sm leading-relaxed">
-      Offset & Digital Printing | Flex & Banner Printing | T-Shirt & Mug Printing | Screen & UV Printing <br />
-      Business & Wedding Cards | Signage & Branding Solutions | And Much More!
-    </p>
-  </div>
-</section>
 
 
 
@@ -133,9 +108,7 @@ export default function Printing() {
 
       </div>
 
-      <TopPrinting />
-      <BrandingSolutions />
-     
+    
     </>
   );
 }
