@@ -7,14 +7,14 @@ import {
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaEnvelope,
-  FaWhatsapp // Import WhatsApp icon
+  FaWhatsapp,
 } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
-  return (  
+  return (
     <footer className="bg-gradient-to-br from-[#C90055] via-[#000536] to-[#000536] text-white pt-10 px-4 md:px-16">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 pb-10 border-b border-white/20">
-        
         {/* Left Column */}
         <div>
           <h2 className="text-4xl font-extrabold">AR PRINT HUB</h2>
@@ -26,7 +26,6 @@ export default function Footer() {
             <a href="#" className="hover:text-gray-300"><FaTwitter /></a>
             <a href="#" className="hover:text-gray-300"><FaYoutube /></a>
             <a href="#" className="hover:text-gray-300"><FaInstagram /></a>
-            {/* WhatsApp Icon */}
             <a href="https://wa.me/917050266383" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
               <FaWhatsapp />
             </a>
@@ -34,7 +33,7 @@ export default function Footer() {
         </div>
 
         {/* Middle Column */}
-        <div className='pl-14'>
+        <div className="pl-14">
           <h3 className="text-xl font-semibold mb-4">Get In Touch</h3>
           <div className="flex items-start space-x-3 mb-3">
             <FaMapMarkerAlt className="mt-1" />
@@ -51,27 +50,29 @@ export default function Footer() {
         </div>
 
         {/* Right Column */}
-        <div className='pl-14'>
+        <div className="pl-14">
           <h3 className="text-xl font-semibold mb-4">Explore</h3>
           <ul className="space-y-2 text-sm text-white/90">
-            <li><a href="#" className="hover:underline">&gt; Home</a></li>
-            <li><a href="#" className="hover:underline">&gt; Services</a></li>
-            <li><a href="#" className="hover:underline">&gt; Order</a></li>
-            <li><a href="#" className="hover:underline">&gt; Contact</a></li>
-            <li><a href="#" className="hover:underline">&gt; Blog</a></li>
+            <li><Link to="/" className="hover:underline">&gt; Home</Link></li>
+            <li><Link to="/digital-services" className="hover:underline">&gt; Digital Services</Link></li>
+            <li><Link to="/printing-services" className="hover:underline">&gt; Printing Services</Link></li>
+            <li><Link to="/our-services" className="hover:underline">&gt; Our Services</Link></li>
+            <li><Link to="/contact" className="hover:underline">&gt; Contact</Link></li>
+            <li><Link to="/blog" className="hover:underline">&gt; Blog</Link></li>
+            <li><Link to="/about" className="hover:underline">&gt; About</Link></li>
           </ul>
         </div>
       </div>
 
       {/* Bottom Footer */}
       <div className="max-w-7xl mx-auto py-4 px-4 md:px-16 flex flex-col md:flex-row justify-between text-xs text-white/70">
-        <p>Copyright © 2025 Chronicle Realty, All rights reserved</p>
+        <p>Copyright © 2025 AR Print Hub, All rights reserved</p>
         <div className="flex space-x-4 mt-2 md:mt-0">
-          <a href="#" className="hover:underline">Terms of service</a>
+          <Link to="/terms" className="hover:underline">Terms of Service</Link>
           <span>|</span>
-          <a href="#" className="hover:underline">Privacy policy</a>
+          <Link to="/privacy-policy" className="hover:underline">Privacy Policy</Link>
           <span>|</span>
-          <a href="#" className="hover:underline">Cookies</a>
+          <Link to="/cookies" className="hover:underline">Cookies</Link>
         </div>
       </div>
     </footer>

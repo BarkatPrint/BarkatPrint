@@ -32,6 +32,9 @@ const Header = () => {
         <Link to="/our-services" className="px-3 py-2 hover:bg-white hover:text-[#000433] rounded-md transition duration-200">
           Our Services
         </Link>
+        <Link to="/about" className="px-3 py-2 hover:bg-white hover:text-[#000433] rounded-md transition duration-200">
+          About
+        </Link>
         <Link to="/blog" className="px-3 py-2 hover:bg-white hover:text-[#000433] rounded-md transition duration-200">
           Blog
         </Link>
@@ -97,6 +100,9 @@ const Header = () => {
           </Link>
           <Link onClick={closeSidebar} to="/our-services" className="hover:text-[#C90055] font-semibold">
             Our Services
+          </Link>
+          <Link onClick={closeSidebar} to="/about" className="hover:text-[#C90055] font-semibold">
+            About
           </Link>
           <Link onClick={closeSidebar} to="/blog" className="hover:text-[#C90055] font-semibold">
             Blog
