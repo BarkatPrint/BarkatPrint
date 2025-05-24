@@ -4,7 +4,7 @@ const SplashScreen = ({ onFinish }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       onFinish();
-    }, 3000); // 3 seconds splash
+    }, 1500); // 1.5 seconds splash duration for faster loading
     return () => clearTimeout(timer);
   }, [onFinish]);
 

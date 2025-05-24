@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import All from './All';
-import SplashScreen from './SplashScreen'; // SplashScreen को import करें
+import SplashScreen from './SplashScreen';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000); // Splash दिखाने का duration
+    }, 1500); // Splash दिखाने का duration अब 1.5 सेकंड है
     return () => clearTimeout(timer);
   }, []);
 
