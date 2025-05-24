@@ -9,7 +9,7 @@ const SplashScreen = ({ onFinish }) => {
   }, [onFinish]);
 
   return (
-    <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-[#000673] to-[#0f1b4c]">
+    <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-[#C90055] to-[#0f1b4c]">
       <img
         src="/logo512.png"
         alt="AR Print Hub"
