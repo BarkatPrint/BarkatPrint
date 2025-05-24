@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import All from './All';
+import SplashScreen from './SplashScreen'; // SplashScreen को import करें
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000); // Splash दिखाने का duration
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <SplashScreen onFinish={() => setLoading(false)} />;
+  }
+
   return (
     <div className="relative">
       <All />
+
       {/* Floating WhatsApp Button */}
       <a
         href="https://wa.me/917050266383"
