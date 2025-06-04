@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { HashRouter as Router } from 'react-router-dom';
-import All from './All';
-import SplashScreen from './SplashScreen';
+import React, { useState, useEffect } from "react";
+import { HashRouter as Router } from "react-router-dom";
+import All from "./All";
+import SplashScreen from "./SplashScreen";
 
 function App() {
   const [loading, setLoading] = useState(true);
